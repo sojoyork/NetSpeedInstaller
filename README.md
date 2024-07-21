@@ -19,6 +19,8 @@ then this:
 ```
 python3 NetSpeedInstaller.py
 ```
+and you installed it!
+
 The tool was going to be runned with "netspeedinstaller -run" but this had some problems so we just made it's running runned with `python3 NetSpeedInstaller.py`
 ## If you need more apps:
 Just edit this repostory! (we are also adding apps to NetSpeedInstaller soon!)
