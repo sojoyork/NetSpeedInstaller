@@ -15,8 +15,8 @@ setup(
     },
     description='A command-line tool to download and install applications from the internet.',
     author='Your Name',
-    author_email='your.email@example.com',
-    url='https://github.com/yourusername/netspeedinstaller',
+    author_email='Sojoyork/amricanboi/RussianDude',
+    url='https://github.com/sojoyork/NetSpeedInstaller',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
