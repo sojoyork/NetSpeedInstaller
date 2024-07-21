@@ -13,7 +13,7 @@ git clone https://github.com/sojoyork/NetSpeedInstaller.git
 ```
 then this:
 ```sh
-cd NetSpeedInstaller
+cd NetSpeedInstaller/netspeedinstaller
 ```
 then this
 ```sh
