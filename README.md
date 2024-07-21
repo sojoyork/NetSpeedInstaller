@@ -17,7 +17,6 @@ cd NetSpeedInstaller
 then this:
 ```sh
 cd NetSpeedInstaller
-```
 then this:
 ```shh
 python3 NetSpeedInstaller.py
