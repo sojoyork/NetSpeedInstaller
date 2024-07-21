@@ -13,9 +13,9 @@ setup(
             'netspeedinstaller=netspeedinstaller.cli:main',
         ],
     },
-    description='A command-line tool to download and install applications from the internet for fun!',
-    author='Sojoyork/amricanboi/RussianDude',
-    author_email='aimaankhankvs@gmail.com',
+    description='A command-line tool to download and install applications from the internet.',
+    author='Your Name',
+    author_email='your.email@example.com',
     url='https://github.com/yourusername/netspeedinstaller',
     classifiers=[
         'Programming Language :: Python :: 3',
