@@ -1,8 +1,7 @@
 import time
 import sys
-import os
-import requests
 from colorama import init, Fore, Style
+from .downloader import download_app
 
 class NetSpeedInstaller:
     def __init__(self):
@@ -73,27 +72,13 @@ class NetSpeedInstaller:
                 time.sleep(0.05)
             print(f"{Fore.YELLOW}]")
             print(f"{Fore.CYAN}Downloading...{Style.RESET_ALL}")
-            self.download_app(url, app_name)
+            download_app(url, app_name)
             self.installed_apps.append(app_name)
             print(f"{Fore.GREEN}Done!{Style.RESET_ALL}")
         else:
             print(f"{Fore.RED}App not found!{Style.RESET_ALL}")
 
-    def download_app(self, url, app_name):
-        local_filename = os.path.join(os.getcwd(), app_name)
-        with requests.get(url, stream=True) as r:
-            r.raise_for_status()
-            with open(local_filename, 'wb') as f:
-                for chunk in r.iter_content(chunk_size=8192):
-                    f.write(chunk)
-        print(f"{Fore.GREEN}{app_name} has been downloaded.{Style.RESET_ALL}")
-
     def add_app(self, app_path):
         app_name = app_path.split('/')[-1]
         self.apps[app_name] = app_path
         print(f"{Fore.GREEN}app added!{Style.RESET_ALL}")
-
-if __name__ == "__main__":
-    nsi = NetSpeedInstaller()
-    nsi.boot_up()
-    nsi.main_interface()
