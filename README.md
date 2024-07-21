@@ -11,7 +11,7 @@ type this command in your terminal:
 ```sh
 git clone https://github.com/sojoyork/NetSpeedInstaller.git
 ```
-them this:
+then this:
 ```sh
 cd NetSpeedInstaller
 ```
