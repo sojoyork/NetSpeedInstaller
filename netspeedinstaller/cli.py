@@ -1,14 +1,18 @@
-# cli.py
 import argparse
-from .core import main_function
+from .installer import NetSpeedInstaller
 
 def main():
-    parser = argparse.ArgumentParser(description="NetSpeedInstaller CLI")
-    parser.add_argument('--run', action='store_true', help="Run the main function")
+    parser = argparse.ArgumentParser(description='NetSpeedInstaller - A command-line tool to download and install applications from the internet.')
+    parser.add_argument('-run', action='store_true', help='Run the NetSpeedInstaller')
+    
     args = parser.parse_args()
-
+    
     if args.run:
-        main_function()
+        nsi = NetSpeedInstaller()
+        nsi.boot_up()
+        nsi.main_interface()
+    else:
+        parser.print_help()
 
 if __name__ == "__main__":
     main()
