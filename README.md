@@ -13,20 +13,13 @@ git clone https://github.com/sojoyork/NetSpeedInstaller.git
 ```
 then this:
 ```sh
-cd NetSpeedInstaller/netspeedinstaller
-```
-then this
+cd NetSpeedInstaller
+then this:
 ```sh
-pip install -r requirements.txt
+cd NetSpeedInstaller
 ```
-then this
-```sh
-pip install .
-```
-then the final command that you need to run:
-```sh
-netspeedinstaller -run
-```
-And you installed it!
+then this:
+```shh
+python3 
 
 # If you need more apps:
