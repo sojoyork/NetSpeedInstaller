@@ -7,5 +7,7 @@ NetSpeedInstaller is a command-line tool that allows users to download and insta
 - Colorful and user-friendly interface
 
 ## Installation
+
 ```sh
 pip install -r requirements.txt
+```
