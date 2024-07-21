@@ -15,6 +15,18 @@ then this:
 ```sh
 cd NetSpeedInstaller
 ```
+then this
 ```sh
 pip install -r requirements.txt
 ```
+then this
+```sh
+pip install .
+```
+then the final command that you need to run:
+```sh
+netspeedinstaller -run
+```
+And you installed it!
+
+# If you need more apps:
