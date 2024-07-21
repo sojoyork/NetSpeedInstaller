@@ -3,6 +3,7 @@ import sys
 import os
 import requests
 from colorama import init, Fore, Style
+from .downloader import download_app
 
 class NetSpeedInstaller:
     def __init__(self):
